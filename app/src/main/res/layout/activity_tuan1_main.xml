@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tuan1.Tuan1MainActivity"
+    android:background="#91C8E4">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_title"
+        android:gravity="center"
+        android:text="Máy tính"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/Input1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94" />
+
+    <EditText
+        android:id="@+id/Input2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@drawable/corner_shape"
+        android:ems="10"
+        android:hint="@string/s_th_hai"
+        android:inputType="numberDecimal"
+        android:paddingStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Input1"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:ems="10"
+        android:hint="@string/s_u_ti_n"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/corner_shape"
+        android:paddingStart="10dp"
+        />
+
+    <Button
+        android:id="@+id/Calc"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/t_nh"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input2"
+        android:background="@drawable/corner_button"
+        />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="153dp"
+        android:text="Result"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Calc"
+        app:layout_constraintVertical_bias="0.139" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
